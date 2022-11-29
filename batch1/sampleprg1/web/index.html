@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Student registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+        form{
+     
+            padding:50px;
+        background-color:#c1e4c8;
+        }
+        label{
+            display:block;
+            padding: 10px;
+             margin-left: 200px;
+            margin-right: 200px;
+        }
+        .row{
+            border: 2px solid red;
+            margin-left: 250px;
+            margin-right: 250px;
+            
+        }
+        .btn{
+            background-color: green;
+            margin-left: 100px;
+           
+        }
+        .btn2{
+            background-color: red;
+            margin-left: 250px;
+         
+        }
+        h2{
+            text-align: center;
+        }
+        
+        </style>
+    </head>
+    
+   
+    <body>
+        <div class="row" >
+           
+            <form>
+                <h2> Registration form</h2>
+                <label > name:
+                    <input type="text" name="sname"></label>
+                 <label> age:&nbsp;
+                     <input type="number" name="age"></label>
+                 <label> gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="Radio" name="gender" value="male">male
+                <input type="Radio" name="gender" value="female">female</label>
+                 <label> address:
+                     <input type="text" name="adress"></label>
+                 <label> mobile:
+                     <input type="number" name="mobile"></label>
+                 <label> email:
+                     <input type="text" name="email"></label>
+                <input type="reset" name="reset" class="btn2">
+                <input type="button" class="btn" name="ok" value="submit">
+            </form>
+            
+        </div>
+    </body>
+</html>

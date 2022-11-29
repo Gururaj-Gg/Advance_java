@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+        form{
+     
+            padding:50px;
+        background-color:#c1e4c8;
+        }
+        label{
+            display:block;
+            padding: 10px;
+             margin-left: 200px;
+            margin-right: 200px;
+        }
+        .row{
+            border: 2px solid red;
+            margin-left: 250px;
+            margin-right: 250px;
+            
+        }
+        .btn{
+            background-color: green;
+            margin-left: 100px;
+           
+        }
+        .btn2{
+            background-color: red;
+            margin-left: 250px;
+         
+        }
+        h2{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        
+        </style>
+    </head>
+    <body>
+       <div class="row" >
+           
+            <form action="calcservlet">
+                <h1> calculator</h1>
+                <label > First Number:
+                    <input type="text" name="one"></label>
+                 <label>Second Number:&nbsp;
+                     <input type="text" name="two"></label>
+                <h2> select operation </h2>
+                 <label>Addition:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="Radio" name="opr" value="+"></label>
+                 <label>Subtraction:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="Radio" name="opr" value="-"></label>
+                  <label>Multiply:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="Radio" name="opr" value="*"></label>
+                  <label>Division:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="Radio" name="opr" value="/"></label>
+                     
+                <input type="reset" name="reset" class="btn2">
+                <input type="submit" class="btn" value="calculate">
+            </form>
+            
+        </div>
+    </body>
+</html>
